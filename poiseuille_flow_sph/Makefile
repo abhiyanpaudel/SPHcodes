@@ -1,5 +1,4 @@
-##########################################################
-# Makefile for EDU2D-CCFV-Euler-EXPLCT
+
 ##########################################################
  PROGRAM = poiseuille_sph
 ##########################################################
@@ -28,10 +27,6 @@ OBCTS =	$(SDIR)/av_velocity.o\
 	$(SDIR)/single_step.o\
 	$(SDIR)/sph.o\
 
-##########################################################
-# Make executable "mg"
-# Note: use "gfortran -O2" for best performance, but
-#       don't use it until you're sure bugs are removed.
 ##########################################################
 $(PROGRAM): $(OBCTS)
 #	gfortran -O0 -g -fimplicit-none  -Wall  -Wline-truncation  -Wcharacter-truncation  -Wsurprising  -Waliasing  -Wimplicit-interface  -Wunused-parameter  -fwhole-file  -fcheck=all  -std=f2008  -pedantic  -fbacktrace -fall-intrinsics -o $@ $(OBCTS)
