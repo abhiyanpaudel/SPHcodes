@@ -1,0 +1,4 @@
+# SPHcodes
+```
+make -f Makefile
+```
