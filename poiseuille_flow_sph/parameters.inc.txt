@@ -1,0 +1,17 @@
+
+
+!    maxn    : Maximum number of particles
+!    max_interation : Maximum number of interaction pairs
+      INTEGER maxn,max_interaction
+      PARAMETER ( maxn    = 2500 , max_interaction = 100 * maxn )
+
+!     Smoothing kernel function 
+!     ! skf = 1 refers to bell-shaped function
+	!       = 2 refers to gaussian kernel 
+	!       = 3 refers to cubic spline function
+    !       = 4 refers to quintic spline function 
+      INTEGER skf 
+      PARAMETER ( skf = 4 )
+           
+      double precision pi
+      PARAMETER ( pi = 3.14159265358979323846 )
